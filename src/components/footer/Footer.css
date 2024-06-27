@@ -1,0 +1,125 @@
+.main__footer{
+    height: 60vh;
+    width: 100%;
+    background-color: burlywood;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+.footer__name{
+    width: 20vw;
+    height: 50vh;
+    border: 2px solid white;
+    text-align: center;
+}
+
+.footer__name h1{
+    color: white;
+}
+.footer__logo{
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    margin: 10px auto;
+}
+
+.footer__logo img{
+    height: 100%;
+    width: 100%;
+}
+
+.footer__name h1{
+    font-family: 'Brush Script MT', cursive;
+
+}
+
+.links{
+    width: 52vw;
+    height: 50vh;
+    border: 2px solid white;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main__links{
+    width: 20vw;
+    height: 50vh;
+    border: 2px solid white;
+    /* padding: 20px; */
+    text-align: center;
+}
+
+.social__links{
+    width: 20vw;
+    height: 50vh;
+    border: 2px solid white;
+    /* padding: 20px; */
+}
+
+.main__links h3{
+    color: white; 
+    text-decoration: underline;  
+}
+
+.main__links a{
+    text-decoration: none;
+    color: white;
+    
+}
+
+.main__links li{
+    list-style: none;
+    line-height: 32px;
+}
+
+.main__links a:hover{
+    text-decoration: underline;
+}
+
+.social__links h3{
+    color: white;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.social__links li{
+    list-style: none;
+    line-height: 44px;
+}
+
+.social__links a{
+    text-decoration: none;
+    color: white;
+
+}
+
+.combine{
+    display: flex;
+    height: 80%;
+    width: 100%;
+    border: 2px solid;
+    justify-content: space-between;
+}
+
+.social__icons{
+    width: 35%;
+    height: 100%;
+    border: 2px solid;
+    line-height: 45px;
+    font-size: 25px;
+    color: white;
+    text-align: center;
+    text-align: end;
+}
+
+.list{
+    width: 62%;
+    height: 100%;
+    border: 2px solid;
+    /* line-height: 51px; */
+    /* font-size: 25px; */
+    color: white;
+}
