@@ -107,6 +107,11 @@
   
     .navbar-links.open {
       display: flex;
+      margin-right: 45px;
+    }
+
+    .navbar-title.open{
+      display: none;
     }
   
     .navbar-link, .navbar-phone {

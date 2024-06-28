@@ -1,0 +1,187 @@
+.sell__main{
+    height: 100vh;
+    width: 100%;
+}
+
+.sell__main img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(0.5);
+}
+
+.seller__main{
+    height: 100vh;
+    width: 100%;
+    border: 2px solid black;
+    display: flex;
+    margin-top: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic__box{
+    height: 100%;
+    width: 42%;
+    border-radius: 20px;
+    border: 2px solid;
+    /* padding: 50px;*/
+}
+
+.pic__box img {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.seller__form{
+    height: 100%;
+    width: 42%;
+    border-radius: 20px;
+    border: 2px solid;
+    /* padding: 50px;*/
+}
+
+.seller__heading{
+    height: 20vh;
+    width: 37vw;
+    position: absolute;
+    z-index: 999;
+    color: white;
+    top: 38%;
+    /* margin: 278px auto; */
+    left: 30%;
+    text-align: center;
+    font-size: 25px;
+}
+
+/* form{
+    padding: 20px;
+}
+
+.form__name input{
+    height: 40px;
+    width: 259px;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+    /* margin: 20px 74px 0px -84px; */
+
+/* } */
+
+/*.form__name{
+    border: 2px solid;
+    height: 63px;
+    display: flex;
+}
+
+.form__name label{
+    width: 100px;
+    height: 20px;
+}
+
+.form__number{
+    border: 2px solid;
+    height: 63px;
+    display: flex;
+}
+
+.form__number label{
+    width: 100px;
+    height: 20px;
+}
+.form__number input{
+    height: 40px;
+    width: 259px;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+    /* margin: 20px 45px 0px -84px; */
+
+/* } */
+
+  
+/*.form__city{
+    border: 2px solid;
+    height: 63px;
+    display: flex;
+}
+
+.form__city label{
+    width: 100px;
+    height: 20px;
+}
+
+.form__city input{
+    height: 40px;
+    width: 259px;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+    /* margin: 20px 45px 0px -84px; */
+
+/* } */
+
+/*.form__address{
+    border: 2px solid;
+    height: 63px;
+    display: flex;
+}
+
+.form__address label{
+    width: 100px;
+    height: 20px;
+}
+.form__address input{
+    height: 40px;
+    width: 259px;
+    border-radius: 10px;
+    /* margin-top: 20px; */
+    /* margin: 20px 45px 0px -84px; */
+
+/* }  */
+  
+  
+/* .input-box{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    outline: none;
+    font-size: 1rem;
+    color: #707070;
+    margin-top: 8px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    padding: 0 15px;
+} */
+
+.form__name{
+    display: flex;
+    column-gap: 15px;
+
+}
+
+.form__number{
+    display: flex;
+    column-gap: 15px;
+}
+
+.form__address{
+    display: flex;
+    column-gap: 15px;
+}
+
+.form__city{
+    display: flex;
+    column-gap: 15px;
+}
+input{
+    height: 40px;
+    width: 210px;
+    border-radius: 10px;
+}
+   
+.input-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+}

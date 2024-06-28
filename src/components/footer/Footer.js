@@ -1,11 +1,13 @@
 import React from 'react'
 import './Footer.css'
 import f_logo from './Sardarji1.png'
+import alogo from './Sardarji.jpg'
 import { FaFacebookF } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
 import { FaWhatsapp } from "react-icons/fa";
 import { IoLogoYoutube } from "react-icons/io5";
+import { FaRegCopyright } from "react-icons/fa";
 
 const Footer = () => {
   return (
@@ -33,11 +35,11 @@ const Footer = () => {
                 <h3>Social Links</h3>
                 <div className='combine'>
                 <div className='social__icons'>
-                    <div className='icon'><FaFacebookF /></div>
-                    <div className='icon'><FaTwitter /></div>
-                    <div className='icon'><FaInstagram /></div>
-                    <div className='icon'><FaWhatsapp /></div>
-                    <div className='icon'><IoLogoYoutube /></div>
+                    <div className='icon'><a href='https://www.facebook.com/'><FaFacebookF /></a></div>
+                    <div className='icon'><a href='https://x.com/'><FaTwitter /></a></div>
+                    <div className='icon'><a href='https://www.instagram.com/'><FaInstagram /></a></div>
+                    <div className='icon'><a href='https://www.whatsapp.com/'><FaWhatsapp /></a></div>
+                    <div className='icon'><a href='https://www.youtube.com/'><IoLogoYoutube /></a></div>
                 </div>
                 <div className='list'>
                 <li><a href='https://www.facebook.com/'>Facebook</a></li>
@@ -50,6 +52,12 @@ const Footer = () => {
             </div>
         </div>
       </div>
+      <hr></hr>
+        <div class="copyright">
+        <FaRegCopyright /><span>2024 MADE BY</span><div class="aman_logo">
+      <img src={f_logo} alt='sometthing went wrong'></img>
+      </div><span>A_S_P CASTING</span>
+  </div>
     </>
   )
 }
