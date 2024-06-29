@@ -7,7 +7,9 @@ import Navbar from './components/header/Navbar';
 // import Categories from './components/categories/Categories';
 // import BandS from './components/by&sell/BandS';
 // import Footer from './components/footer/Footer';
-import Sellerpage from './components/by&sell/Sellerpage';
+// import Sellerpage from './components/by&sell/Sellerpage';
+import Buyerpage from './components/by&sell/Buyerpage';
+// import PagesSlider from './components/by&sell/PagesSlider';
 
 function App() {
   return (
@@ -20,7 +22,9 @@ function App() {
       {/* <Categories/> */}
       {/* <BandS/> */}
       {/* <Footer/> */}
-      <Sellerpage/>
+      {/* <Sellerpage/> */}
+      <Buyerpage/>
+      {/* <PagesSlider/> */}
     </div>
   );
 }

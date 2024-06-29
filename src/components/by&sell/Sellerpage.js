@@ -1,7 +1,6 @@
 import "./Pages.css";
 import seller from "./sellerpic.jpg";
 import sellerpic from "./sellerpagepic.avif";
-import React, { useState } from "react";
 
 const Sellerpage = () => {
   return (
@@ -13,10 +12,11 @@ const Sellerpage = () => {
         <img src={seller} alt="something went wrong"></img>
       </div>
       <div className="seller__main">
-        <div className="pic__box">
+        <img src={sellerpic} alt="something went wrong"></img>
+        <div className="seller__form">
           <img src={sellerpic} alt="something went wrong"></img>
         </div>
-        <div className="seller__form">
+        <div className="form__div">
           <form>
             <h1>Get Your Home Estimation</h1>
             <div className="form__name">
@@ -67,8 +67,13 @@ const Sellerpage = () => {
                 <input type="text" placeholder="Zip" required></input>
               </div>
             </div>
-            <label>Message</label>
-            <textarea type="text" placeholder="Message"></textarea>
+            <div className="message">
+              <div className="input-box">
+                <label>Message*</label>
+                <textarea type="text" placeholder="Message"></textarea>
+              </div>
+            </div>
+
             <button type="submit">Send Email</button>
           </form>
         </div>

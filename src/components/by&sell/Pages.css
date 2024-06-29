@@ -1,187 +1,325 @@
-.sell__main{
+.sell__main {
     height: 100vh;
     width: 100%;
 }
 
-.sell__main img{
+.sell__main img {
     height: 100%;
     width: 100%;
     object-fit: cover;
     filter: brightness(0.5);
 }
 
-.seller__main{
+.seller__main {
     height: 100vh;
     width: 100%;
-    border: 2px solid black;
     display: flex;
-    margin-top: 100px;
+    margin-top: 1px;
     justify-content: center;
     align-items: center;
 }
 
-.pic__box{
+.pic__box {
     height: 100%;
     width: 42%;
     border-radius: 20px;
-    border: 2px solid;
-    /* padding: 50px;*/
 }
 
-.pic__box img {
+.seller__main img {
     height: 100%;
     width: 100%;
-    border-radius: 20px;
 }
 
-.seller__form{
-    height: 100%;
-    width: 42%;
-    border-radius: 20px;
-    border: 2px solid;
-    /* padding: 50px;*/
+.seller__form {
+    height: 90%;
+    width: 30%;
+    position: absolute;
+    filter: blur(10px);
 }
 
-.seller__heading{
+.seller__heading {
     height: 20vh;
     width: 37vw;
     position: absolute;
     z-index: 999;
     color: white;
     top: 38%;
-    /* margin: 278px auto; */
     left: 30%;
     text-align: center;
     font-size: 25px;
 }
 
-/* form{
-    padding: 20px;
-}
-
-.form__name input{
-    height: 40px;
-    width: 259px;
-    border-radius: 10px;
-    /* margin-top: 20px; */
-    /* margin: 20px 74px 0px -84px; */
-
-/* } */
-
-/*.form__name{
-    border: 2px solid;
-    height: 63px;
-    display: flex;
-}
-
-.form__name label{
-    width: 100px;
-    height: 20px;
-}
-
-.form__number{
-    border: 2px solid;
-    height: 63px;
-    display: flex;
-}
-
-.form__number label{
-    width: 100px;
-    height: 20px;
-}
-.form__number input{
-    height: 40px;
-    width: 259px;
-    border-radius: 10px;
-    /* margin-top: 20px; */
-    /* margin: 20px 45px 0px -84px; */
-
-/* } */
-
-  
-/*.form__city{
-    border: 2px solid;
-    height: 63px;
-    display: flex;
-}
-
-.form__city label{
-    width: 100px;
-    height: 20px;
-}
-
-.form__city input{
-    height: 40px;
-    width: 259px;
-    border-radius: 10px;
-    /* margin-top: 20px; */
-    /* margin: 20px 45px 0px -84px; */
-
-/* } */
-
-/*.form__address{
-    border: 2px solid;
-    height: 63px;
-    display: flex;
-}
-
-.form__address label{
-    width: 100px;
-    height: 20px;
-}
-.form__address input{
-    height: 40px;
-    width: 259px;
-    border-radius: 10px;
-    /* margin-top: 20px; */
-    /* margin: 20px 45px 0px -84px; */
-
-/* }  */
-  
-  
-/* .input-box{
-    position: relative;
-    height: 50px;
+form{
+    height: 100%;
     width: 100%;
-    outline: none;
-    font-size: 1rem;
-    color: #707070;
-    margin-top: 8px;
-    border: 1px solid #ddd;
-    border-radius: 6px;
-    padding: 0 15px;
-} */
+}
 
-.form__name{
+.form__name {
     display: flex;
     column-gap: 15px;
 
 }
 
-.form__number{
+.form__number {
     display: flex;
     column-gap: 15px;
 }
 
-.form__address{
+.form__address {
     display: flex;
     column-gap: 15px;
 }
 
-.form__city{
+.form__city {
     display: flex;
     column-gap: 15px;
 }
-input{
+
+.form__city input {
+    width: 126px;
+}
+
+input {
     height: 40px;
-    width: 210px;
+    width: 197px;
     border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: white;
+    background: transparent;
+    border: 1px solid #fff;
 }
-   
-.input-box{
+ input:focus{
+    outline: none;
+ }
+.input-box {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     flex-direction: column;
     text-align: left;
+}
+
+textarea {
+    height: 100px;
+    background: transparent;
+    border: 1px solid #fff;
+    color: white;
+    border-radius: 10px;
+}
+
+::placeholder{
+    color: #fff;
+}
+label{
+    color: #fff;
+}
+
+form button {
+    height: 40px;
+    width: 170px;
+    border-radius: 10px;
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    margin: 40px 121px;
+}
+
+form button:hover{
+    background: white;
+    color: black;
+}
+
+form h1{
+    font-family: "Dancing Script";
+    color: white;
+    text-align: center;
+}
+
+.form__div{
+    position: absolute;
+}
+
+
+
+@media (min-width: 0px) and (max-width: 600px) {
+    .sell__main {
+        height: 40vh;
+        width: 100%;
+    }
+    
+    .seller__main {
+        height: 100vh;
+        height: 100vh;
+        margin-top: 2px;
+    }
+    
+    .pic__box {
+        height: 100%;
+        width: 42%;
+    }
+    
+    .seller__form {
+        height: 90%;
+        width: 100%;
+    }
+    
+    .seller__heading {
+        height: 27vh;
+        width: 79vw;
+        top: 8%;
+        left: 10%;
+        font-size: 12px;
+    }    
+    
+    .form__name {
+        width: 304px;
+        margin-left: 7px;
+    
+    }
+    
+    .form__number {
+        width: 304px;
+        margin-left: 7px;
+    }
+    
+    .form__address {
+        width: 304px;
+        margin-left: 7px;
+    }
+    
+    .form__city {
+        margin-left: 7px;
+    }
+    
+    .form__city input {
+        width: 91px;
+    }
+
+    .message{
+        width: 304px;
+        margin-left: 7px;
+    }
+    
+    input {
+        height: 35px;
+        width: 145px;
+    }
+    
+    textarea {
+        height: 80px;
+        width: 304px;
+    }
+    
+    form button {
+        margin: 40px 75px
+    }
+
+    .form__div{
+        position: absolute;
+    }
+}
+
+@media (min-Width: 600px) and (max-width: 1200px) {
+    .seller__heading{
+        height: 32vh;
+        width: 61vw;
+        left: 195px;
+        top: 173px;
+    }
+    
+    .seller__form{
+        width: 50%;
+    }
+}
+/* /-------------------------------------------------------------------------/ */
+.buyer__pagepic{
+    width: 100%;
+    height: 70vh;
+}
+
+.buyer__pagepic h1{
+    position: absolute;
+    color: white;
+    top: 28%;
+    left: 44%;
+    font-size: 50px;
+}
+
+.buyer__pagepic img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.buyer__page{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5px;
+    padding-top: 20px;
+    background-color: aqua;
+}
+
+.buy__home{
+    height: 56vh;
+    width: 23vw;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+.buy__slider{
+    width: 100%;
+    height: 60%;
+    border: 2px solid;
+    padding: 10px;
+}
+
+.buy__info{
+    width: 100%;
+    height: 40%;
+    border: 2px solid;
+}
+
+.house__name{
+    height: 7vh;
+    width: 100%;
+    border: 2px solid;
+    padding: 10px;
+}
+
+.bedrooms{
+    height: 7vh;
+    width: 100%;
+    border: 2px solid;
+    padding: 10px;
+}
+
+.price{
+    height: 7vh;
+    width: 100%;
+    border: 2px solid;
+    padding: 10px;
+}
+
+.house__name p{
+   margin: 0px;
+   font-size: 20px;
+
+}
+
+.rooms{
+    margin: 0px;
+    font-size: 20px;
+}
+
+.price__price{
+    margin: 0px;
+    font-size: 20px;
+    color: red;
+    font-weight: 900;
 }
