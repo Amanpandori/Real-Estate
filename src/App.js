@@ -9,6 +9,7 @@ import Navbar from './components/header/Navbar';
 // import Footer from './components/footer/Footer';
 // import Sellerpage from './components/by&sell/Sellerpage';
 import Buyerpage from './components/by&sell/Buyerpage';
+import SliderData from './components/by&sell/SliderData';
 // import PagesSlider from './components/by&sell/PagesSlider';
 
 function App() {
@@ -23,7 +24,8 @@ function App() {
       {/* <BandS/> */}
       {/* <Footer/> */}
       {/* <Sellerpage/> */}
-      <Buyerpage/>
+      {/* <Buyerpage/> */}
+      <SliderData/>
       {/* <PagesSlider/> */}
     </div>
   );

@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from "react";
 import './Slider.css';
-import home1 from './home1.jpeg'
-import i1 from './i1.jpeg'
-import i2 from './i2.jpg'
-import i3 from './i3.avif'
+import home11 from './home11.jpg'
+import i31 from './i31.jpg'
+import i32 from './i32.jpg'
+import i33 from './i33.jpg'
 
-export default function PagesSlider() {
+export default function PagesSlider11() {
   const [currentIndex, setCurrentIndex] = useState(0);
   const slideCount = 4; // Number of slides
 
@@ -30,16 +30,16 @@ export default function PagesSlider() {
     <div className="slider">
       <div className="slides">
         <div className="slide">
-          <img src={home1} alt="Slide 1" />
+          <img src={home11} alt="Slide 1" />
         </div>
         <div className="slide">
-          <img src={i1} alt="Slide 2" />
+          <img src={i31} alt="Slide 2" />
         </div>
         <div className="slide">
-          <img src={i2} alt="Slide 3" />
+          <img src={i32} alt="Slide 3" />
         </div>
         <div className="slide">
-          <img src={i3} alt="Slide 4" />
+          <img src={i33} alt="Slide 4" />
         </div>
       </div>
       <div className="navigation">

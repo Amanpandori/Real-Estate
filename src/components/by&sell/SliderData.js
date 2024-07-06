@@ -2,7 +2,17 @@
 
 
 
-const SliderData = [
+
+// export default SliderData;
+
+
+
+import React from 'react'
+import Buyerpage from './Buyerpage';
+
+
+
+const Data = [
     {img: '', homename: 'Gorgeous studio for rent', bedrooms: '5 Bedrooms·6 Bathrooms·Size 190 ft2', price: '$ 770,000'},
     {img: '', homename: 'Family house for sale', bedrooms: '2 Bedrooms·5 Bathrooms·Size 29,000 ft2', price: '$ 100,000'},
     {img: '', homename: 'Townhouse for sale', bedrooms: '3 Bedrooms·4 Bathrooms·Size 20,000 ft2', price: '$ 210,000'},
@@ -21,5 +31,23 @@ const SliderData = [
     {img: '', homename: 'Villa with panoramic view', bedrooms: '3 Bedrooms·4 Bathrooms·Size 240 ft2', price: '$ 500 / month'},
 ];
 
+function SliderData() {
+  return (
+    <div>
+      {
+            Data.map((value, index)=>{
+                // console.log(value)
+                return(
+                    <Buyerpage 
+                    name={value.homename}
+                    bedrooms={value.bedrooms}
+                    price={value.price}
+                     />
+                )
+            })
+      }
+    </div>
+  )
+}
 
-export default SliderData;
+export default SliderData
