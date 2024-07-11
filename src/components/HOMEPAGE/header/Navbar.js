@@ -1,6 +1,6 @@
 
 
-
+import { Link } from 'react-router-dom';
 import React, { useState } from 'react';
 import './Navbar.css';
 
@@ -20,11 +20,12 @@ const NavBar = () => {
           <div className={`burger-line ${isOpen ? 'open' : ''}`}></div>
         </div>
         <div className={`navbar-links ${isOpen ? 'open' : ''}`}>
-          <a href="#home" className="navbar-link">Home</a>
-          <a href="#demos" className="navbar-link">Demos</a>
-          <a href="#properties" className="navbar-link">Properties</a>
-          <a href="#about" className="navbar-link">About</a>
-          <a href="#blog" className="navbar-link">Blog</a>
+          
+          <Link to={'/'} className="navbar-link">Home</Link>
+          <Link to={'/'} className="navbar-link">Demos</Link>
+          <Link to={'/'} className="navbar-link">Properties</Link>
+          <Link to={'/'} className="navbar-link">About</Link>
+          <Link to={'/'} className="navbar-link">Blog</Link>
         </div>
       </div>
       <div className="navbar-center">

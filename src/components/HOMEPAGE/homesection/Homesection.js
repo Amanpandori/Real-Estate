@@ -1,5 +1,5 @@
 import React from 'react'
-import './Homesetion.css'
+import './Homesection.css'
 import spic1 from './sectionpic7.jpg'
 import spic2 from './sectionpic1.jpg'
 import spic3 from './sectionpic2.jpg'

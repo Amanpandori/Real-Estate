@@ -21,7 +21,7 @@ import PagesSlider16 from "./PagesSlider16";
 // import SliderData from "./SliderData";
 
 
-const Buyerpage = ({name,bedrooms,price}) => {
+const Buyerpage = () => {
   // console.log(name)
   return (
     <>
@@ -37,13 +37,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Gorgeous studio for rent</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">5 Bedrooms·6 Bathrooms·Size 190 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 770,000</span>
             </div>
           </div>
         </div>
@@ -53,13 +53,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Family house for sale</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">2 Bedrooms·5 Bathrooms·Size 29,000 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 100,000</span>
             </div>
           </div>
         </div>
@@ -69,13 +69,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Townhouse for sale</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">3 Bedrooms·4 Bathrooms·Size 20,000 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 210,000</span>
             </div>
           </div>
         </div>
@@ -85,13 +85,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Villa with panoramic view</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">4 Bedrooms·5 Bathrooms·Size 24,000 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 5,500,000</span>
             </div>
           </div>
         </div>
@@ -101,13 +101,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Modern penthouse apartment</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">5 Bedrooms·6 Bathrooms·Size 25,000 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 2,000 / month</span>
             </div>
           </div>
         </div>
@@ -117,13 +117,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Modern office for rent</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">3 Bedrooms·4 Bathrooms·Size 27,000 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 1,600 / month</span>
             </div>
           </div>
         </div>
@@ -133,13 +133,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Apartment with ocean view</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">4 Bedrooms·5 Bathrooms·Size 22,000 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 1,500,000</span>
             </div>
           </div>
         </div>
@@ -149,13 +149,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Spacious home for sale</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">6 Bedrooms·7 Bathrooms·Size 30,000 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 800,000</span>
             </div>
           </div>
         </div>
@@ -165,13 +165,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Modern condo for rent</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">4 Bedrooms·5 Bathrooms·Size 23,000 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 500 / month</span>
             </div>
           </div>
         </div>
@@ -181,13 +181,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Apartment space for rent</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">2 Bedrooms·3 Bathrooms·Size 10,000 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 800 / month</span>
             </div>
           </div>
         </div>
@@ -197,13 +197,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Modern penthouse apartment</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">2 Bedrooms·2 Bathrooms·Size 250 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 2,000 / month</span>
             </div>
           </div>
         </div>
@@ -213,13 +213,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Modern office for rent</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">2 Bedrooms·3 Bathrooms·Size 220 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 1,600 / month</span>
             </div>
           </div>
         </div>
@@ -229,13 +229,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Apartment with ocean view</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">3 Bedrooms·2 Bathrooms·Size 230 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 1,500,000</span>
             </div>
           </div>
         </div>
@@ -245,13 +245,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Spacious home for sale</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">4 Bedrooms·4 Bathrooms·Size 255 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 800,000</span>
             </div>
           </div>
         </div>
@@ -261,13 +261,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Modern condo for rent</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">5 Bedrooms·4 Bathrooms·Size 2560 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 500 / month</span>
             </div>
           </div>
         </div>
@@ -277,13 +277,13 @@ const Buyerpage = ({name,bedrooms,price}) => {
           </div>
           <div className="buy__info">
             <div className="house__name">
-              <p>{name}</p>
+              <p>Villa with panoramic view</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">{bedrooms}</span>
+              <span className="rooms">3 Bedrooms·4 Bathrooms·Size 240 ft2</span>
             </div>
             <div className="price">
-              <span className="price__price">{price}</span>
+              <span className="price__price">$ 500 / month</span>
             </div>
           </div>
         </div>

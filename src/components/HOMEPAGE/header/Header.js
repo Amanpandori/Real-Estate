@@ -1,6 +1,13 @@
 import React from 'react'
 import './Header.css'
 import video from './headervideo.mp4'
+import Homesetion from '../homesection/Homesection.js';
+import Bychoose from '../bychoose/Bychoose.js';
+import Categories from '../categories/Categories.js';
+import BandS from '../by&sell/BandS.js';
+import About from '../homeabout/About.js';
+ 
+
 
 const Header = () => {
   return (
@@ -12,6 +19,11 @@ const Header = () => {
             Listings in San Jose</h1>
           </div>
       </div>
+      <About/>
+      <Homesetion/>
+      <Bychoose/>
+      <Categories/>
+      <BandS/>
     </>
   )
 }

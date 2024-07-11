@@ -1,32 +1,24 @@
 import './App.css';
-import Navbar from './components/header/Navbar';
-// import Header from './components/header/Header';
-// import About from './components/homeabout/About';
-// import Homesetion from './components/homesetion/Homesetion';
-// import Bychoose from './components/bychoose/Bychoose';
-// import Categories from './components/categories/Categories';
-// import BandS from './components/by&sell/BandS';
-// import Footer from './components/footer/Footer';
-// import Sellerpage from './components/by&sell/Sellerpage';
-import Buyerpage from './components/by&sell/Buyerpage';
-import SliderData from './components/by&sell/SliderData';
-// import PagesSlider from './components/by&sell/PagesSlider';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Navbar from './components/HOMEPAGE/header/Navbar';
+import Header from './components/HOMEPAGE/header/Header';
+import Footer from './components/footer/Footer';
+import Buyerpage from './components/HOMEPAGE/by&sell/Buyerpage';
+import Sellerpage from './components/HOMEPAGE/by&sell/Sellerpage';
+
 
 function App() {
   return (
     <div>
+      <BrowserRouter>
       <Navbar/>
-      {/* <Header/> */}
-      {/* <About/> */}
-      {/* <Homesetion/> */}
-      {/* <Bychoose/> */}
-      {/* <Categories/> */}
-      {/* <BandS/> */}
-      {/* <Footer/> */}
-      {/* <Sellerpage/> */}
-      {/* <Buyerpage/> */}
-      <SliderData/>
-      {/* <PagesSlider/> */}
+      <Routes>
+        <Route path="/" element={<Header/>}/>
+        <Route path="/Sell" element={<Sellerpage/>}/>
+        <Route path="/Buy" element={<Buyerpage/>}/>
+      </Routes>
+      <Footer/>
+      </BrowserRouter>      
     </div>
   );
 }

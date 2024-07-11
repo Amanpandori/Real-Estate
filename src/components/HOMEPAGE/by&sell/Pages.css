@@ -49,7 +49,7 @@
     font-size: 25px;
 }
 
-form{
+form {
     height: 100%;
     width: 100%;
 }
@@ -89,9 +89,11 @@ input {
     background: transparent;
     border: 1px solid #fff;
 }
- input:focus{
+
+input:focus {
     outline: none;
- }
+}
+
 .input-box {
     display: flex;
     flex-wrap: wrap;
@@ -108,10 +110,11 @@ textarea {
     border-radius: 10px;
 }
 
-::placeholder{
+::placeholder {
     color: #fff;
 }
-label{
+
+label {
     color: #fff;
 }
 
@@ -125,18 +128,18 @@ form button {
     margin: 40px 121px;
 }
 
-form button:hover{
+form button:hover {
     background: white;
     color: black;
 }
 
-form h1{
+form h1 {
     font-family: "Dancing Script";
     color: white;
     text-align: center;
 }
 
-.form__div{
+.form__div {
     position: absolute;
 }
 
@@ -147,98 +150,100 @@ form h1{
         height: 40vh;
         width: 100%;
     }
-    
+
     .seller__main {
         height: 100vh;
         height: 100vh;
         margin-top: 2px;
     }
-    
+
     .pic__box {
         height: 100%;
         width: 42%;
     }
-    
+
     .seller__form {
         height: 90%;
         width: 100%;
     }
-    
+
     .seller__heading {
         height: 27vh;
         width: 79vw;
         top: 8%;
         left: 10%;
         font-size: 12px;
-    }    
-    
+    }
+
     .form__name {
         width: 304px;
         margin-left: 7px;
-    
+
     }
-    
+
     .form__number {
         width: 304px;
         margin-left: 7px;
     }
-    
+
     .form__address {
         width: 304px;
         margin-left: 7px;
     }
-    
+
     .form__city {
         margin-left: 7px;
     }
-    
+
     .form__city input {
         width: 91px;
     }
 
-    .message{
+    .message {
         width: 304px;
         margin-left: 7px;
     }
-    
+
     input {
         height: 35px;
         width: 145px;
     }
-    
+
     textarea {
         height: 80px;
         width: 304px;
     }
-    
+
     form button {
         margin: 40px 75px
     }
 
-    .form__div{
+    .form__div {
         position: absolute;
     }
 }
 
 @media (min-Width: 600px) and (max-width: 1200px) {
-    .seller__heading{
+    .seller__heading {
         height: 32vh;
         width: 61vw;
         left: 195px;
         top: 173px;
     }
-    
-    .seller__form{
+
+    .seller__form {
         width: 50%;
     }
+
 }
+
 /* /-------------------------------------------------------------------------/ */
-.buyer__pagepic{
+.buyer__pagepic {
     width: 100%;
     height: 70vh;
 }
 
-.buyer__pagepic h1{
+.buyer__pagepic h1 {
     position: absolute;
     color: white;
     top: 28%;
@@ -246,13 +251,13 @@ form h1{
     font-size: 50px;
 }
 
-.buyer__pagepic img{
-   width: 100%;
-   height: 100%;
-   object-fit: cover;
+.buyer__pagepic img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.buyer__page{
+.buyer__page {
     width: 100%;
     height: auto;
     display: flex;
@@ -260,63 +265,62 @@ form h1{
     flex-wrap: wrap;
     padding: 5px;
     padding-top: 20px;
-    background-color: aqua;
 }
 
-.buy__home{
+.buy__home {
     height: 56vh;
     width: 23vw;
     border-radius: 10px;
     margin-bottom: 10px;
-    border: 2px solid black;
     padding: 5px;
+    transition:  1s ease;
 }
 
-.buy__slider{
+.buy__home:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0)
+
+}
+
+.buy__slider {
     width: 100%;
     height: 60%;
-    border: 2px solid;
 }
 
-.buy__info{
+.buy__info {
     width: 100%;
     height: 40%;
-    border: 2px solid;
 }
 
-.house__name{
+.house__name {
     height: 7vh;
     width: 100%;
-    border: 2px solid;
     padding: 10px;
 }
 
-.bedrooms{
+.bedrooms {
     height: 7vh;
     width: 100%;
-    border: 2px solid;
     padding: 10px;
 }
 
-.price{
+.price {
     height: 7vh;
     width: 100%;
-    border: 2px solid;
     padding: 10px;
 }
 
-.house__name p{
-   margin: 0px;
-   font-size: 20px;
-
-}
-
-.rooms{
+.house__name p {
     margin: 0px;
     font-size: 20px;
+    font-weight: 700;
 }
 
-.price__price{
+.rooms {
+    margin: 0px;
+    font-size: 14px;
+}
+
+.price__price {
     margin: 0px;
     font-size: 20px;
     color: red;
