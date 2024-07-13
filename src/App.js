@@ -5,6 +5,7 @@ import Header from './components/HOMEPAGE/header/Header';
 import Footer from './components/footer/Footer';
 import Buyerpage from './components/HOMEPAGE/by&sell/Buyerpage';
 import Sellerpage from './components/HOMEPAGE/by&sell/Sellerpage';
+import Properties from './components/PROPERTIESPAGE/Properties';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
         <Route path="/" element={<Header/>}/>
         <Route path="/Sell" element={<Sellerpage/>}/>
         <Route path="/Buy" element={<Buyerpage/>}/>
+        <Route path='/properties' element={<Properties/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>      
