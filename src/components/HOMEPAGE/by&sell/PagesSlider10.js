@@ -10,8 +10,8 @@ export default function PagesSlider10() {
   const slideCount = 4; // Number of slides
 
   const updateSlidePosition = () => {
-    const slides = document.querySelector('.slides');
-    slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+    const slides10 = document.querySelector('.slides10');
+    slides10.style.transform = `translateX(-${currentIndex * 100}%)`;
   };
 
   useEffect(() => {
@@ -28,7 +28,7 @@ export default function PagesSlider10() {
 
   return (
     <div className="slider">
-      <div className="slides">
+      <div className="slides10">
         <div className="slide">
           <img src={home10} alt="Slide 1" />
         </div>
