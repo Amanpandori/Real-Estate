@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useEffect } from 'react'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import "./About.css";
 import { FaFacebookF } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
@@ -6,6 +8,9 @@ import { FaInstagram } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
 const About = () => {
+  useEffect(()=>{
+    AOS.init({duration: "1000"});
+  },[]);
   return (
     <>
       <div className="a__main">
@@ -17,7 +22,7 @@ const About = () => {
         <h1 className="a__heading">ABOUT</h1>
       </div>
       <div className="a__leader">
-        <div className="leader__info">
+        <div className="leader__info" data-aos="slide-right">
           <h1 className="leader__name">Aman Sidhu</h1>
           <p className="a__leader__para">
             With over $2 Billion in sales, Our agency is the industry’s top
@@ -58,7 +63,7 @@ const About = () => {
           </Link>
           <hr></hr>
         </div>
-        <div className="leader__pic">
+        <div className="leader__pic" data-aos="slide-left">
           <img
             src="https://static.vecteezy.com/system/resources/previews/028/144/531/original/asian-businessman-isolated-png.png"
             alt="something went wrong"
@@ -77,7 +82,7 @@ const About = () => {
           </p>
         </div>
         <div className="realty__container">
-          <div className="our__vision">
+          <div className="our__vision" data-aos="slide-right">
             <h2 className="our__heading">Our Vision</h2>
             <p className="our__vision__para">
               Due to our unparalleled results, expertise and dedication, we rank
@@ -85,7 +90,7 @@ const About = () => {
               and is an elite member to Corcoran’s Presidents Council.
             </p>
           </div>
-          <div className="our__mission">
+          <div className="our__mission" data-aos="slide-left">
             <h2 className="our__heading">Our Mission</h2>
             <p className="our__mission__para">
               With over $2 Billion in sales, Our agency is the industry’s top
@@ -93,7 +98,7 @@ const About = () => {
               Seattles’s most prestigious waterfront properties.
             </p>
           </div>
-          <div className="our__values">
+          <div className="our__values" data-aos="slide-right">
             <h2 className="our__heading">Our Values</h2>
             <p className="our__values__para">
               With her years of experience, impressive property portfolio,
@@ -102,7 +107,7 @@ const About = () => {
               renowned.
             </p>
           </div>
-          <div className="our__resoures">
+          <div className="our__resoures" data-aos="slide-left">
             <h2 className="our__heading">Our Resources</h2>
             <p className="our__resoures__para">
               With her years of experience, impressive property portfolio,
@@ -119,13 +124,13 @@ const About = () => {
             <p>Liza is recognized by everyone – clients, developers, vendors, and industry professionals – for her unique talents, creative drive, and diligence in assisting buyers and sellers in one of the most scenic and fulfilling places, Park City.</p>
         </div>
         <div className="team__members">
-            <div className="member1">
+            <div className="member1" data-aos="zoom-in">
                 <img src="https://cloudfront-us-east-2.images.arcpublishing.com/reuters/OTTKXNBQVJN7HDIYMUXPXPVEQM.jpg" alt="something went wrong"></img>
             </div>
-            <div className="member1">
+            <div className="member1" data-aos="zoom-in">
                 <img src="https://d2un9pqbzgw43g.cloudfront.net/wordpress-themes/uploads/sites/2/businessman-office-happy.jpg" alt="something went wrong"></img>
             </div>
-            <div className="member1">
+            <div className="member1" data-aos="zoom-in">
                 <img src="https://cdn-wordpress-info.futurelearn.com/wp-content/uploads/women-future-business.jpg.optimal.jpg" alt="something went wrong"></img>
             </div>
         </div>

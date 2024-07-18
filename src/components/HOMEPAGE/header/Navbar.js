@@ -1,8 +1,10 @@
 
 
 import { Link } from 'react-router-dom';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import './Navbar.css';
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -10,9 +12,12 @@ const NavBar = () => {
   const toggleMenu = () => {
     setIsOpen(!isOpen);
   };
+  useEffect(()=>{
+    AOS.init({duration: "1000"});
+  },[]);
 
   return (
-    <div className="navbar">
+    <div className="navbar" data-aos="top-top">
       <div className="navbar-left">
         <div className="navbar-burger" onClick={toggleMenu}>
           <div className={`burger-line ${isOpen ? 'open' : ''}`}></div>

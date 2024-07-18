@@ -1,5 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Properties.css'
+import AOS from "aos";
+import "aos/dist/aos.css";
 import PagesSlider from "../HOMEPAGE/by&sell/PagesSlider";
 import PagesSlider2 from "../HOMEPAGE/by&sell/PagesSlider2";
 import PagesSlider3 from "../HOMEPAGE/by&sell/PagesSlider3";
@@ -19,6 +21,9 @@ import PagesSlider16 from "../HOMEPAGE/by&sell/PagesSlider16";
 
 
 const Properties = () => {
+  useEffect(()=>{
+    AOS.init({duration: "1000"});
+  },[]);
   return (
     <>
      <div className='p__main'>
@@ -53,7 +58,7 @@ const Properties = () => {
       </form>
       </div> 
       <div className="buyer__page">
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider/>
           </div>
@@ -69,7 +74,7 @@ const Properties = () => {
             </div>
           </div>
         </div>
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider2/>
           </div>
@@ -85,7 +90,7 @@ const Properties = () => {
             </div>
           </div>
         </div>
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider3/>
           </div>
@@ -101,7 +106,7 @@ const Properties = () => {
             </div>
           </div>
         </div>
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider4/>
           </div>
@@ -117,7 +122,7 @@ const Properties = () => {
             </div>
           </div>
         </div>
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider5/>
           </div>
@@ -133,7 +138,7 @@ const Properties = () => {
             </div>
           </div>
         </div>
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider6/>
           </div>
@@ -149,7 +154,7 @@ const Properties = () => {
             </div>
           </div>
         </div>
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider7/>
           </div>
@@ -165,7 +170,7 @@ const Properties = () => {
             </div>
           </div>
         </div>
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider8/>
           </div>
@@ -181,7 +186,7 @@ const Properties = () => {
             </div>
           </div>
         </div>
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider9/>
           </div>
@@ -197,7 +202,7 @@ const Properties = () => {
             </div>
           </div>
         </div>
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider10/>
           </div>
@@ -213,7 +218,7 @@ const Properties = () => {
             </div>
           </div>
         </div>
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider11/>
           </div>
@@ -229,7 +234,7 @@ const Properties = () => {
             </div>
           </div>
         </div>
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider12/>
           </div>
@@ -245,7 +250,7 @@ const Properties = () => {
             </div>
           </div>
         </div>
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider13/>
           </div>
@@ -261,7 +266,7 @@ const Properties = () => {
             </div>
           </div>
         </div>
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider14/>
           </div>
@@ -277,7 +282,7 @@ const Properties = () => {
             </div>
           </div>
         </div>
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider15/>
           </div>
@@ -293,7 +298,7 @@ const Properties = () => {
             </div>
           </div>
         </div>
-        <div className="buy__home">
+        <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
             <PagesSlider16/>
           </div>
