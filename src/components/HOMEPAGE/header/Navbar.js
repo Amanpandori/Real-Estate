@@ -23,17 +23,16 @@ const NavBar = () => {
           
           <Link to={'/'} className="navbar-link">Home</Link>
           <Link to={'/properties'} className="navbar-link">Properties</Link>
-          <Link to={'/'} className="navbar-link">About</Link>
-          <Link to={'/'} className="navbar-link">Blog</Link>
+          <Link to={'/about'} className="navbar-link">About</Link>
+          <Link to={'/blog'} className="navbar-link">Blog</Link>
         </div>
       </div>
       <div className="navbar-center">
         <span className="navbar-title">Aman Sidhu</span>
       </div>
       <div className="navbar-right">
-        <a href="#contact" className="navbar-link">Contact Us</a>
-        <a href="#valuation" className="navbar-link">Home Valuation</a>
-        <a href="tel:+12067410340" className="navbar-phone">+1 206-741-0340</a>
+        <Link to={'/contact'} className="navbar-link">Contact Us</Link>
+        <a href="tel:+91 98989-89898" className="navbar-phone">+91 98989-89898</a>
       </div>
     </div>
   );

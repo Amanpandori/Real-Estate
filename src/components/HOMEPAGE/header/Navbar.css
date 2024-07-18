@@ -99,6 +99,7 @@
   @media (max-width: 768px) {
     .navbar {
       flex-direction: column;
+      background-color: transparent;
     }
   
     .navbar-burger {
@@ -132,6 +133,14 @@
   
     .navbar-right {
       display: none;
+    }
+
+    .navbar-title{
+      display: none;
+    }
+
+    .navbar:hover{
+      background-color: transparent;
     }
   }
   

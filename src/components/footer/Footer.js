@@ -1,7 +1,6 @@
 import React from 'react'
 import './Footer.css'
 import f_logo from './Sardarji1.png'
-import alogo from './Sardarji.jpg'
 import { FaFacebookF } from "react-icons/fa6";
 import { FaTwitter } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa6";
