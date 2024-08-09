@@ -1,4 +1,4 @@
-// import React, { useState } from 'react'
+
 import './BandS.css'
 import seller from './seller.jpg'
 import buyer from './buyer.jpg'
@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 
 const BandS = () => {
 
-      // let [name,setName] = useState()
+     
         return (
     <>
       <div className='main__bands'>
