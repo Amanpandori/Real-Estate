@@ -21,6 +21,28 @@ import PagesSlider16 from "../HOMEPAGE/by&sell/PagesSlider16";
 
 
 const Properties = () => {
+  const onSubmit = async (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "3188a17e-d4be-49c1-afcd-5e17f65bee75");
+
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const res = await fetch("https://api.web3forms.com/submit", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Accept: "application/json"
+      },
+      body: json
+    }).then((res) => res.json());
+
+    if (res.success) {
+      console.log("Success", res);
+    }
+  };
   useEffect(()=>{
     AOS.init({duration: "1000"});
   },[]);
@@ -30,25 +52,25 @@ const Properties = () => {
       <img src='https://lifencolors.in/cdn/shop/files/green-living-room-wallpaper.jpg?v=1706098026&width=1500' alt='something went wrong'></img>
       <h1 className='p__main__heading'>Top Real Estate
       Listings in San Jose</h1>
-      <form className='p__form'>
+      <form className='p__form' onSubmit={onSubmit}>
         <div className='form__center'>
-          <input type='text' className='p__input input1' placeholder='Enter yor Address,state,city,area pin code' ></input>
-          <select className='p__dropdown'>
+          <input type='text' className='p__input input1' placeholder='Enter yor Address,state,city,area pin code' name='Address'></input>
+          <select className='p__dropdown' name='Type of Home'>
             <option>Commercial</option>  
             <option>Multi Family Houses</option>
             <option>Houses</option>
           </select>
-          <select className='p__dropdown'>
-            <option>Propert Status</option>
+          <select className='p__dropdown' name='Property Status'>
+            <option>Property Status</option>
             <option>Active</option>
             <option>Open House</option>
             <option>Sold</option>
           </select>
         </div>
         <div className='form__center'>
-          <input type='text' className='p__input input' placeholder="Enter Beds and Bathrooms"></input>
-          <input type='text' className='p__input' placeholder='MLS#'></input>
-          <select className='p__dropdown'>
+          <input type='text' className='p__input input' placeholder="Enter Beds and Bathrooms" name='Count of rooms'></input>
+          <input type='text' className='p__input' placeholder='MLS#' name='MLS'></input>
+          <select className='p__dropdown' name='Price'>
             <option>Price Select</option>
             <option>5000$-10000$</option>
             <option>10000$-50000$</option>
