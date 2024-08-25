@@ -1,5 +1,5 @@
-import React, { useEffect } from 'react'
-import './Properties.css'
+import React, { useEffect } from "react";
+import "./Properties.css";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import PagesSlider from "../HOMEPAGE/by&sell/PagesSlider";
@@ -19,7 +19,6 @@ import PagesSlider14 from "../HOMEPAGE/by&sell/PagesSlider14";
 import PagesSlider15 from "../HOMEPAGE/by&sell/PagesSlider15";
 import PagesSlider16 from "../HOMEPAGE/by&sell/PagesSlider16";
 
-
 const Properties = () => {
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -34,55 +33,74 @@ const Properties = () => {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Accept: "application/json"
+        Accept: "application/json",
       },
-      body: json
+      body: json,
     }).then((res) => res.json());
 
     if (res.success) {
       console.log("Success", res);
     }
   };
-  useEffect(()=>{
-    AOS.init({duration: "1000"});
-  },[]);
+  useEffect(() => {
+    AOS.init({ duration: "1000" });
+  }, []);
   return (
     <>
-     <div className='p__main'>
-      <img src='https://lifencolors.in/cdn/shop/files/green-living-room-wallpaper.jpg?v=1706098026&width=1500' alt='something went wrong'></img>
-      <h1 className='p__main__heading'>Top Real Estate
-      Listings in San Jose</h1>
-      <form className='p__form' onSubmit={onSubmit}>
-        <div className='form__center'>
-          <input type='text' className='p__input input1' placeholder='Enter yor Address,state,city,area pin code' name='Address'></input>
-          <select className='p__dropdown' name='Type of Home'>
-            <option>Commercial</option>  
-            <option>Multi Family Houses</option>
-            <option>Houses</option>
-          </select>
-          <select className='p__dropdown' name='Property Status'>
-            <option>Property Status</option>
-            <option>Active</option>
-            <option>Open House</option>
-            <option>Sold</option>
-          </select>
-        </div>
-        <div className='form__center'>
-          <input type='text' className='p__input input' placeholder="Enter Beds and Bathrooms" name='Count of rooms'></input>
-          <input type='text' className='p__input' placeholder='MLS#' name='MLS'></input>
-          <select className='p__dropdown' name='Price'>
-            <option>Price Select</option>
-            <option>5000$-10000$</option>
-            <option>10000$-50000$</option>
-          </select>
-          <button className='p__btn'>Search Properties</button>
-        </div>
-      </form>
-      </div> 
+      <div className="p__main">
+        <img
+          src="https://lifencolors.in/cdn/shop/files/green-living-room-wallpaper.jpg?v=1706098026&width=1500"
+          alt="something went wrong"
+        ></img>
+        <h1 className="p__main__heading">
+          Top Real Estate Listings in San Jose
+        </h1>
+        <form className="p__form" onSubmit={onSubmit}>
+          <div className="form__center">
+            <input
+              type="text"
+              className="p__input input1"
+              placeholder="Enter yor Address,state,city,area pin code"
+              name="Address"
+            ></input>
+            <select className="p__dropdown" name="Type of Home">
+              <option>Commercial</option>
+              <option>Multi Family Houses</option>
+              <option>Houses</option>
+            </select>
+            <select className="p__dropdown" name="Property Status">
+              <option>Property Status</option>
+              <option>Active</option>
+              <option>Open House</option>
+              <option>Sold</option>
+            </select>
+          </div>
+          <div className="form__center">
+            <input
+              type="text"
+              className="p__input input"
+              placeholder="Enter Beds and Bathrooms"
+              name="Count of rooms"
+            ></input>
+            <input
+              type="text"
+              className="p__input"
+              placeholder="MLS#"
+              name="MLS"
+            ></input>
+            <select className="p__dropdown" name="Price">
+              <option>Price Select</option>
+              <option>5000$-10000$</option>
+              <option>10000$-50000$</option>
+            </select>
+            <button className="p__btn">Search Properties</button>
+          </div>
+        </form>
+      </div>
       <div className="buyer__page">
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider/>
+            <PagesSlider />
           </div>
           <div className="buy__info">
             <div className="house__name">
@@ -98,14 +116,16 @@ const Properties = () => {
         </div>
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider2/>
+            <PagesSlider2 />
           </div>
           <div className="buy__info">
             <div className="house__name">
               <p>Family house for sale</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">2 Bedrooms·5 Bathrooms·Size 29,000 ft2</span>
+              <span className="rooms">
+                2 Bedrooms·5 Bathrooms·Size 29,000 ft2
+              </span>
             </div>
             <div className="price">
               <span className="price__price">$ 100,000</span>
@@ -114,14 +134,16 @@ const Properties = () => {
         </div>
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider3/>
+            <PagesSlider3 />
           </div>
           <div className="buy__info">
             <div className="house__name">
               <p>Townhouse for sale</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">3 Bedrooms·4 Bathrooms·Size 20,000 ft2</span>
+              <span className="rooms">
+                3 Bedrooms·4 Bathrooms·Size 20,000 ft2
+              </span>
             </div>
             <div className="price">
               <span className="price__price">$ 210,000</span>
@@ -130,14 +152,16 @@ const Properties = () => {
         </div>
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider4/>
+            <PagesSlider4 />
           </div>
           <div className="buy__info">
             <div className="house__name">
               <p>Villa with panoramic view</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">4 Bedrooms·5 Bathrooms·Size 24,000 ft2</span>
+              <span className="rooms">
+                4 Bedrooms·5 Bathrooms·Size 24,000 ft2
+              </span>
             </div>
             <div className="price">
               <span className="price__price">$ 5,500,000</span>
@@ -146,14 +170,16 @@ const Properties = () => {
         </div>
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider5/>
+            <PagesSlider5 />
           </div>
           <div className="buy__info">
             <div className="house__name">
               <p>Modern penthouse apartment</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">5 Bedrooms·6 Bathrooms·Size 25,000 ft2</span>
+              <span className="rooms">
+                5 Bedrooms·6 Bathrooms·Size 25,000 ft2
+              </span>
             </div>
             <div className="price">
               <span className="price__price">$ 2,000 / month</span>
@@ -162,14 +188,16 @@ const Properties = () => {
         </div>
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider6/>
+            <PagesSlider6 />
           </div>
           <div className="buy__info">
             <div className="house__name">
               <p>Modern office for rent</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">3 Bedrooms·4 Bathrooms·Size 27,000 ft2</span>
+              <span className="rooms">
+                3 Bedrooms·4 Bathrooms·Size 27,000 ft2
+              </span>
             </div>
             <div className="price">
               <span className="price__price">$ 1,600 / month</span>
@@ -178,14 +206,16 @@ const Properties = () => {
         </div>
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider7/>
+            <PagesSlider7 />
           </div>
           <div className="buy__info">
             <div className="house__name">
               <p>Apartment with ocean view</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">4 Bedrooms·5 Bathrooms·Size 22,000 ft2</span>
+              <span className="rooms">
+                4 Bedrooms·5 Bathrooms·Size 22,000 ft2
+              </span>
             </div>
             <div className="price">
               <span className="price__price">$ 1,500,000</span>
@@ -194,14 +224,16 @@ const Properties = () => {
         </div>
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider8/>
+            <PagesSlider8 />
           </div>
           <div className="buy__info">
             <div className="house__name">
               <p>Spacious home for sale</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">6 Bedrooms·7 Bathrooms·Size 30,000 ft2</span>
+              <span className="rooms">
+                6 Bedrooms·7 Bathrooms·Size 30,000 ft2
+              </span>
             </div>
             <div className="price">
               <span className="price__price">$ 800,000</span>
@@ -210,14 +242,16 @@ const Properties = () => {
         </div>
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider9/>
+            <PagesSlider9 />
           </div>
           <div className="buy__info">
             <div className="house__name">
               <p>Modern condo for rent</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">4 Bedrooms·5 Bathrooms·Size 23,000 ft2</span>
+              <span className="rooms">
+                4 Bedrooms·5 Bathrooms·Size 23,000 ft2
+              </span>
             </div>
             <div className="price">
               <span className="price__price">$ 500 / month</span>
@@ -226,14 +260,16 @@ const Properties = () => {
         </div>
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider10/>
+            <PagesSlider10 />
           </div>
           <div className="buy__info">
             <div className="house__name">
               <p>Apartment space for rent</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">2 Bedrooms·3 Bathrooms·Size 10,000 ft2</span>
+              <span className="rooms">
+                2 Bedrooms·3 Bathrooms·Size 10,000 ft2
+              </span>
             </div>
             <div className="price">
               <span className="price__price">$ 800 / month</span>
@@ -242,7 +278,7 @@ const Properties = () => {
         </div>
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider11/>
+            <PagesSlider11 />
           </div>
           <div className="buy__info">
             <div className="house__name">
@@ -258,7 +294,7 @@ const Properties = () => {
         </div>
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider12/>
+            <PagesSlider12 />
           </div>
           <div className="buy__info">
             <div className="house__name">
@@ -274,7 +310,7 @@ const Properties = () => {
         </div>
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider13/>
+            <PagesSlider13 />
           </div>
           <div className="buy__info">
             <div className="house__name">
@@ -290,7 +326,7 @@ const Properties = () => {
         </div>
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider14/>
+            <PagesSlider14 />
           </div>
           <div className="buy__info">
             <div className="house__name">
@@ -306,14 +342,16 @@ const Properties = () => {
         </div>
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider15/>
+            <PagesSlider15 />
           </div>
           <div className="buy__info">
             <div className="house__name">
               <p>Modern condo for rent</p>
             </div>
             <div className="bedrooms">
-              <span className="rooms">5 Bedrooms·4 Bathrooms·Size 2560 ft2</span>
+              <span className="rooms">
+                5 Bedrooms·4 Bathrooms·Size 2560 ft2
+              </span>
             </div>
             <div className="price">
               <span className="price__price">$ 500 / month</span>
@@ -322,7 +360,7 @@ const Properties = () => {
         </div>
         <div className="buy__home" data-aos="zoom-in">
           <div className="buy__slider">
-            <PagesSlider16/>
+            <PagesSlider16 />
           </div>
           <div className="buy__info">
             <div className="house__name">
@@ -338,7 +376,7 @@ const Properties = () => {
         </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default Properties;
