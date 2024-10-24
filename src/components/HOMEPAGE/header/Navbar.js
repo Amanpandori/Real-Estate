@@ -37,7 +37,7 @@ const NavBar = () => {
       </div>
       <div className="navbar-right">
         <Link to={'/contact'} className="navbar-link">Contact Us</Link>
-        <a href="tel:+91 98989-89898" className="navbar-phone">+91 98989-89898</a>
+        <a href="tel:+91 98766-33966" className="navbar-phone">+91 98766-33966</a>
       </div>
     </div>
   );
